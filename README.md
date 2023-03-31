@@ -1,5 +1,5 @@
 # File Sync Script
-
+The script has been implemented using Python programming language and has been tested on machines running `Windows 11` and `Ubuntu 20.04` with `Python 3.10.10`.
 ## Usage
 The script can be invoked by navigating to the project root:
 ```bash
