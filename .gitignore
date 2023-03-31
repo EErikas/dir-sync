@@ -1,2 +1,4 @@
-dest
-src
+dest*
+src*
+*.log
+__pycache__
