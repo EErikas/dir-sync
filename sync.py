@@ -132,10 +132,10 @@ def remove_empty_folders(root_dir: str) -> None:
                          reverse=True)
     unique_dirs = list(dict.fromkeys(
         [os.path.normpath(listed_dir[0]) for listed_dir in listed_dirs]))
-    for dir in unique_dirs:
-        if len(os.listdir(dir)) == 0:
-            view_message(f'Empty directory "{dir}" was removed')
-            rmtree(dir)
+    for unique_dir in unique_dirs:
+        if len(os.listdir(unique_dir)) == 0:
+            view_message(f'Empty directory "{unique_dir}" was removed')
+            rmtree(unique_dir)
 
 
 def get_checksum(file: str) -> int:
